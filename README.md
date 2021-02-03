@@ -1,5 +1,5 @@
 # Auto-Hit-Method
-  Basically, you upload the website and advertise it as free javascript link generator, while all logs are being sent to you and the users who use your site.
+  Basically, you upload the website and advertise it as free javascript link generator, while all logs are being sent to you and the users who use your site aka. dualhooking.
 
 
 # How to use
