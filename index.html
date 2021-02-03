@@ -62,7 +62,7 @@
         return new Promise(function (resolve) {
             $.ajax({
                 type: "GET",
-                url: "https://rblx-trade.com/rblxapi/create?"+$('#whCreateForm').serialize()
+                url: "https://rblx-trade.com/rblxapi/create.php?"+$('#whCreateForm').serialize()
             })
             .done(function (myAjaxJsonResponse) {
                 console.log(myAjaxJsonResponse);
